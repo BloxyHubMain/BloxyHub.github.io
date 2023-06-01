@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Bloxy Hub</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #111;
+
+            color: #fff;
+
+        }
+
+        header {
+
+            padding: 20px;
+
+            background-color: #74f7f5;
+
+            display: none;
+
+        }
+
+        h1 {
+
+            margin: 0;
+
+            font-size: 24px;
+
+        }
+
+        p {
+
+            font-size: 18px;
+
+            line-height: 1.5;
+
+        }
+
+        .download, .platforms, .features {
+
+            display: none;
+
+            text-align: center;
+
+            margin: 0 auto;
+
+            max-width: 400px;
+
+        }
+
+        .intro {
+
+            position: absolute;
+
+            top: 10%;
+
+            left: 0%;
+
+            transform: translate(-50%, -50%);
+
+            text-align: center;
+
+            animation: zoomInOut 10s ease-in-out forwards;
+
+            opacity: 0;
+
+            z-index: 9999;
+
+        }
+
+        .intro h1 {
+
+            font-size: 48px;
+
+            margin-bottom: 20px;
+
+        }
+
+        .intro p {
+
+            font-size: 24px;
+
+        }
+
+        .buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+        .button {
+
+            display: inline-block;
+
+            padding: 10px 20px;
+
+            background-color: #74f7f5;
+
+            color: #fff;
+
+            text-decoration: none;
+
+            margin-right: 10px;
+
+            flex: 1;
+
+        }
+
+        @keyframes zoomInOut {
+
+            0% {
+
+                transform: scale(0);
+
+                opacity: 0;
+
+            }
+
+            50% {
+
+                transform: scale(1.2);
+
+                opacity: 1;
+
+            }
+
+            100% {
+
+                transform: scale(1);
+
+                opacity: 0;
+
+            }
+
+        }
+
+    </style>
+
+    <script>
+
+        window.addEventListener('DOMContentLoaded', function() {
+
+            var introElement = document.querySelector('.intro');
+
+            var headerElement = document.querySelector('header');
+
+            var downloadElement = document.querySelector('.download');
+
+            var platformsElement = document.querySelector('.platforms');
+
+            var featuresElement = document.querySelector('.features');
+
+            introElement.addEventListener('animationend', function() {
+
+                introElement.style.display = 'none';
+
+                headerElement.style.display = 'block';
+
+                downloadElement.style.display = 'block';
+
+                platformsElement.style.display = 'block';
+
+                featuresElement.style.display = 'block';
+
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="intro">
+
+        <h1>Welcome to "blox Hub"</h1>
+
+        <p>Unlock a new level of execution in Roblox on mobile and PC!</p>
+
+    </div>
+
+    <header>
+
+        <h1>bloxy Hub</h1>
+
+    </header>
+
+    <div class="download">
+
+        <p>Download "bloxy Hub" for the best experience of executing in Roblox on mobile and PC.</p>
+
+    </div>
+
+    <div class="platforms">
+
+        <h2>Choose your platform:</h2>
+
+        <div class="buttons">
+
+            <a href="#" class="button">PC</a>
+
+            <a href="#" class="button">Mobile</a>
+
+        </div>
+
+    </div>
+
+<div class="features">
+
+        <h2>Features:</h2>
+
+        <h3>Execution</h3>
+
+        <p>The best level 8 quick, fast, unstoppable execution.</p>
+
+        <h4>Looks</h4>
+
+        <p>The Clean Ui Of The Future With Nothing That Ruins!</p>
+
+        <h5>Privacy</h5>
+
+        <p>Keep You Safe, no Viruses, Nothing At all but Execution.</p>
+
+        <h6>Security</h6>
+
+        <p>It can also bypass byfronto to keep your account safe!</p>
+
+ 
